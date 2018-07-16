@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Num:</strong>
+  <%= @shain.num %>
+</p>
+
+<p>
+  <strong>Name 1:</strong>
+  <%= @shain.name_1 %>
+</p>
+
+<p>
+  <strong>Name 2:</strong>
+  <%= @shain.name_2 %>
+</p>
+
+<p>
+  <strong>Name 1 kana:</strong>
+  <%= @shain.name_1_kana %>
+</p>
+
+<p>
+  <strong>Name 2 kana:</strong>
+  <%= @shain.name_2_kana %>
+</p>
+
+<p>
+  <strong>Busho:</strong>
+  <%= @shain.busho_id %>
+</p>
+
+<p>
+  <strong>Shain kbn:</strong>
+  <%= @shain.shain_kbn %>
+</p>
+
+<p>
+  <strong>Hire date:</strong>
+  <%= @shain.hire_date %>
+</p>
+
+<p>
+  <strong>Leave date:</strong>
+  <%= @shain.leave_date %>
+</p>
+
+<p>
+  <strong>Del flg:</strong>
+  <%= @shain.del_flg %>
+</p>
+
+<%= link_to 'Edit', edit_shain_path(@shain) %> |
+<%= link_to 'Back', shains_path %>

@@ -1,0 +1,57 @@
+<%= form_for(@shain) do |f| %>
+  <% if @shain.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@shain.errors.count, "error") %> prohibited this shain from being saved:</h2>
+
+      <ul>
+      <% @shain.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :num %><br>
+    <%= f.text_field :num %>
+  </div>
+  <div class="field">
+    <%= f.label :name_1 %><br>
+    <%= f.text_field :name_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :name_2 %><br>
+    <%= f.text_field :name_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :name_1_kana %><br>
+    <%= f.text_field :name_1_kana %>
+  </div>
+  <div class="field">
+    <%= f.label :name_2_kana %><br>
+    <%= f.text_field :name_2_kana %>
+  </div>
+  <div class="field">
+    <%= f.label :busho_id %><br>
+    <%= f.text_field :busho_id %>
+  </div>
+  <div class="field">
+    <%= f.label :shain_kbn %><br>
+    <%= f.text_field :shain_kbn %>
+  </div>
+  <div class="field">
+    <%= f.label :hire_date %><br>
+    <%= f.text_field :hire_date %>
+  </div>
+  <div class="field">
+    <%= f.label :leave_date %><br>
+    <%= f.text_field :leave_date %>
+  </div>
+  <div class="field">
+    <%= f.label :del_flg %><br>
+    <%= f.check_box :del_flg %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
